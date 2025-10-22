@@ -46,18 +46,14 @@ AI is the operative layer converting MobilityCorp’s raw telemetry, usage signa
    1. GDPR/CCPA controls for MobilityCorp PII, retention policies, data minimization.
    1. Role-based access control for MobilityCorp staff tools and ML approvals.
 
-![A diagram of a computer
-
-AI-generated content may be incorrect.](Aspose.Words.adea43c2-2add-4115-b44a-bb425b854424.001.png)
+![Workflow Diagram](Aspose.Words.adea43c2-2add-4115-b44a-bb425b854424.001.png)
 
 -----
 **Core Microservices — Expanded Architecture for MobilityCorp**
 
 Each MobilityCorp microservice is isolated by domain, owns its data, and communicates via an event-driven backbone (Kafka or Kinesis). Services expose REST/gRPC APIs for synchronous requests and publish events for async workflows. Below is a breakdown of each microservice, its core functions, data model, integrations, and AI augmentations.
 
-![A diagram of a software system
-
-AI-generated content may be incorrect.](Aspose.Words.adea43c2-2add-4115-b44a-bb425b854424.002.png)
+![Microservices](Aspose.Words.adea43c2-2add-4115-b44a-bb425b854424.002.png)
 
 -----
 **1. User and Identity Service**
@@ -451,3 +447,4 @@ AI-generated content may be incorrect.](Aspose.Words.adea43c2-2add-4115-b44a-bb4
 **Operational imperative for MobilityCorp**
 
 Treat AI outputs as decision-support until measured reliable in production. Enforce human oversight for actions affecting MobilityCorp customers (fines, remote disable). Continuous measurement of MobilityCorp business KPIs must gate model-driven automation.
+
